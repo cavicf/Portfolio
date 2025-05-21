@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --clr-primary: #E02D2D;
+    --clr-black: #191919;
+    --clr-white: #EEF2F5;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 14px;
+    color: var(--clr-black);
+    line-height: 18px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header h1{
+    font-weight: 500;
+}
+
+header nav{
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header nav a{
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+header nav a:hover{
+    font-size: large;
+    color: #E02D2D;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+}
+
+.home-cta{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+    background-image: url(/assets/images/image.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+
+}
+
+.home-cta a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--clr-primary);
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--clr-white);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    
+}
+
+.home-cta a:hover{
+    transform: scale(1.02);
+}
+
+.home-cta a img{
+    object-fit: contain;
+    aspect-ratio: 10/10;
+    width: 2rem;
+
+}
+
+.home-heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-heading h1{
+    font-size: 1.5rem;
+    line-height: 150%;
+    font-weight: 500;
+    margin: 0;
+}
+
+.home-heading p{
+    line-height: 150%;
+    margin: 0;
+}
