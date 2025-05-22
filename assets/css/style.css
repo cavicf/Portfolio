@@ -14,8 +14,7 @@
 .btn{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
+    gap: 0.5rem;
     background-color: var(--clr-primary);
     width: fit-content;
     padding: 0.75rem 1rem;
@@ -30,14 +29,23 @@
     transform: scale(1.02);
 }
 
-.btn img{
-    object-fit: contain;
-    aspect-ratio: 10/10;
-    width: 2rem;
-}
-
 .w-100{
     width: 100%;
+}
+
+/* Seções */
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+
+}
+
+section h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
 }
 
 /* Header */
@@ -76,8 +84,7 @@ header nav a:hover{
 
 /* Home */
 #home{
-    display: flex;
-    flex-direction: column;
+    padding: 0;
     justify-content: center;
     height: 700px;
 }
@@ -114,19 +121,9 @@ header nav a:hover{
 
 /* Sobre */
 #sobre{
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
-    padding: 2rem 1.5rem;
     background-color: var(--clr-black);
     color: var(--clr-white);
-}
-
-#sobre h2{
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: uppercase;
 }
 
 #sobre img{
@@ -141,4 +138,130 @@ header nav a:hover{
     display: flex;
     gap: 1.5rem;
     width: 100%;
+}
+
+/* Projetos */
+#projetos{
+    gap: 1.5rem;
+}
+
+.card{
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding: 1.25rem;
+    border-radius: 5px;
+}
+
+.card img{
+    aspect-ratio: 16/10;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Servicos e Conhecimentos */
+#servicos{
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    gap: 2.5rem;
+}
+
+.base-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.base-list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-primary);
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;    
+}
+
+.servicos-list{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.conhecimentos-list{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.conhecimentos-list li{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+/* Contato */
+#contato{
+    gap: 2rem;
+    padding-block: 4rem;
+}
+#contato h2{
+    margin: 0;
+}
+
+#contato ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+#contato > ul > li{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#contato a{
+    color: var(--clr-black);
+    text-decoration: none;
+}
+
+#contato cite{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1.5rem;
+    background-color: var(--clr-primary);
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--clr-black);
+    font-weight: 300;
+}
+
+footer img{
+    height: 24px;
 }
